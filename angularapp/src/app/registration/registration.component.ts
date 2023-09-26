@@ -13,7 +13,7 @@ export class RegistrationComponent {
   constructor(private fb: FormBuilder) {
     this.registrationForm = this.fb.group({
       firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
+      // lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
       confirmPassword: ['', Validators.required],
